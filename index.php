@@ -10,4 +10,6 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 //phpinfo();
 echo $pdo->query('select sysdate from dual');
+
+echo '終わり';
 ?>
