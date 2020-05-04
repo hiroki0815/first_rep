@@ -12,14 +12,12 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 echo '修正<br>';
 
- $qry = $pdo->prepare('select name from usertable');
+ $qry = $pdo->prepare('select CURRENT_TIMESTAMP as now;');
  $qry->execute();
  foreach($qry->fetchAll() as $row){
  // 取り出したデータの処理
  echo '<tr>';
- echo '<td>', $row['user_name'], '</td>';
- echo '<td>', $row['address'], '</td>';
- echo '<td>', $row['tel'], '</td>';
+ echo '<td>', $row['now'], '</td>';
  echo '</tr>';
  }
 
