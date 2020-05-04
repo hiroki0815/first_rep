@@ -1,27 +1,25 @@
 <?
-echo 'php test<br>';
 
 $dbinfo = parse_url(getenv('DATABASE_URL'));
-
 $dsn = 'pgsql:host=' . $dbinfo['host'] . ';dbname=' . substr($dbinfo['path'], 1);
-
 $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
-//var_dump($pdo->query('select '1' from dual'));
 
-//var_dump($pdo->query('select sysdate from dual'));
-
-echo '修正<br>';
-
+echo '<head>';
+//    <meta charset="utf-8">
+echo '<title>test page</title>'
+echo '</head>'
+echo '<body>';
  $qry = $pdo->prepare('select * from staff;');
  $qry->execute();
  foreach($qry->fetchAll() as $row){
- // 取り出したデータの処理
- echo '<tr>';
- echo '<td>', $row['id'], '</td>';
- echo '</tr>';
+ 	// 取り出したデータの処理
+ 	echo '<tr>';
+ 	echo '<td>', $row['id'], '</td>';
+ 	echo '</tr>';
  }
 
-echo '修正4<br>';
+echo '</body>';
+echo '修正5<br>';
 //var_dump($row);
 
 //pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
