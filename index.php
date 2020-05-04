@@ -17,7 +17,7 @@ echo '修正<br>';
  foreach($qry->fetchAll() as $row){
  // 取り出したデータの処理
  echo '<tr>';
- echo '<td>', $row['now'], '</td>';
+ echo '<td>', var_dump($row), '</td>';
  echo '</tr>';
  }
 
