@@ -10,7 +10,7 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 //var_dump($pdo->query('select sysdate from dual'));
 
-//echo '終わり<br>';
+echo '修正<br>';
 
 var_dump($pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
 
