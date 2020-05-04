@@ -6,8 +6,8 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 echo '<head>';
 //    <meta charset="utf-8">
-echo '<title>test page</title>'
-echo '</head>'
+echo '<title>test page</title>';
+echo '</head>';
 echo '<body>';
  $qry = $pdo->prepare('select * from staff;');
  $qry->execute();
