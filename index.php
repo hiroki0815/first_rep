@@ -17,11 +17,11 @@ echo '修正<br>';
  foreach($qry->fetchAll() as $row){
  // 取り出したデータの処理
  echo '<tr>';
- echo '<td>', var_dump($row), '</td>';
+ echo '<td>', $row['now'], '</td>';
  echo '</tr>';
  }
 
-var_dump($row);
+//var_dump($row);
 
 //pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
 
