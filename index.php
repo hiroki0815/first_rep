@@ -9,7 +9,7 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 //var_dump($pdo->query('select sysdate from dual')));
 
 //phpinfo();
-echo $pdo->query('select sysdate from dual');
+var_dump($pdo->query('select sysdate from dual'));
 
 echo '終わり<br>';
 ?>
