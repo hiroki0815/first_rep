@@ -15,6 +15,7 @@ echo '<body>';
  	// 取り出したデータの処理
  	echo '<tr>';
  	echo '<td>', $row['id'], '</td>';
+ 	echo '<td>', $row['name'], '</td>';
  	echo '</tr>';
  }
 
