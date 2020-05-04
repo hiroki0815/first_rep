@@ -12,11 +12,18 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 echo '修正<br>';
 
-$sql = 'select 1 as a';
+ $qry = $pdo->prepare('select 1 as a');
+ $qry->execute();
+ foreach($qry->fetchAll() as $q){
+ // 取り出したデータの処理
+ 	echo '<tr>';
+ 	echo '<td>', $q, '</td>';
+ 	echo '</tr>';
+ }
 
 var_dump($pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
 
-var_dump($pdo->query($sql));
+//var_dump($pdo->query($sql));
 
 //phpinfo();
 ?>
