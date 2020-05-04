@@ -12,9 +12,6 @@ $pdo = new PDO($dsn, $dbinfo['user'], $dbinfo['pass']);
 
 echo '修正<br>';
 
-var_dump($dbinfo['user']);
-
-/*
  $qry = $pdo->prepare('select * from staff;');
  $qry->execute();
  foreach($qry->fetchAll() as $row){
@@ -23,8 +20,8 @@ var_dump($dbinfo['user']);
  echo '<td>', $row['id'], '</td>';
  echo '</tr>';
  }
-*/
-echo '修正3<br>';
+
+echo '修正4<br>';
 //var_dump($row);
 
 //pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
