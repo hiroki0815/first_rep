@@ -21,7 +21,7 @@ echo '修正<br>';
  	echo '</tr>';
  }
 
-var_dump($pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
+//var_dump($pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
 
 //var_dump($pdo->query($sql));
 
