@@ -20,7 +20,7 @@ echo '<body>';
  }
 
 echo '</body>';
-echo '修正5<br>';
+echo '修正6<br>';
 //var_dump($row);
 
 //pdo->getAttribute(PDO::ATTR_SERVER_VERSION));
