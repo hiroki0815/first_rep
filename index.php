@@ -27,5 +27,5 @@ echo '修正5<br>';
 
 //var_dump($pdo->query($sql));
 
-//phpinfo();
+phpinfo();
 ?>
